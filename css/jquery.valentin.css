@@ -2,6 +2,7 @@ div#indepth_content{
 	background-color: #36AEA6;
 	width: 100%;
 	position: relative;
+	padding-bottom: 50px;
 }
 .indepth_btns{
 	text-align: center;
@@ -51,6 +52,10 @@ div#indepth_top_btn {
 	background-color: rgb(224, 79, 85);
 	line-height: 51px;
 }
+div#indepth_top_btn:hover {
+	background-color: #fff;
+	color: rgb(224, 79, 85);
+}
 div#indepth_top_contbtn a{
 	color:#fff;
 }
@@ -61,33 +66,134 @@ div#indepth_top_logo{
 	height: 58px;
 }
 div#indepth_container_cards{
-	width: 900px;
+	width: 964px;
 	display: table;
-	margin: auto;
+	margin: 85px auto auto;
+}
+div.indepth_card{
+	width: 208px;
+	display: inline-block;
+	margin: 0px 15px 40px;
 }
 div.indepth_cards{
 	width: 202px;
 	height: 317px;
 	border: 2px solid #FFF;
 	border-radius: 5px;
+	cursor: pointer;
 }
-div.indepth_cards:hover{
-	background: url("../images/IMG_VerPostalOver.png") no-repeat center;
+div.indepth_cards_hover{
+	width: 202px;
+	height: 317px;
+	background:  url("../images/IMG_VerPostalOver.png") no-repeat center;
+	background-color: #000;
+	opacity: 0;
+}
+div.indepth_cards_hover:hover{
+	opacity: 0.5;
 }
 div#indepth_card1{
-	background: url("../images/1.jpg") no-repeat top left;
-	background-size: 100%;
+	background: url("../images/1.jpg") no-repeat center / 100%;
+}
+div#indepth_card2{
+	background: url("../images/2.jpg") no-repeat center / 100%;
+}
+div#indepth_card3{
+	background: url("../images/3.jpg") no-repeat center / 100%;
+}
+div#indepth_card4{
+	background: url("../images/4.jpg") no-repeat center / 100%;
+}
+div#indepth_card5{
+	background: url("../images/5.jpg") no-repeat center / 100%;
+}
+div#indepth_card6{
+	background: url("../images/6.jpg") no-repeat center / 100%;
+}
+div#indepth_card7{
+	background: url("../images/7.jpg") no-repeat center / 100%;
+}
+div#indepth_card8{
+	background: url("../images/8.jpg") no-repeat center / 100%;
+}
+div#indepth_card9{
+	background: url("../images/9.jpg") no-repeat center / 100%;
+}
+div#indepth_card10{
+	background: url("../images/10.jpg") no-repeat center / 100%;
+}
+div#indepth_card11{
+	background: url("../images/11.jpg") no-repeat center / 100%;
+}
+div#indepth_card12{
+	background: url("../images/12.jpg") no-repeat center / 100%;
+}
+div#indepth_card13{
+	background: url("../images/13.jpg") no-repeat center / 100%;
+}
+div#indepth_card14{
+	background: url("../images/14.jpg") no-repeat center / 100%;
+}
+div#indepth_card15{
+	background: url("../images/15.jpg") no-repeat center / 100%;
+}
+div#indepth_card16{
+	background: url("../images/16.jpg") no-repeat center / 100%;
 }
 div.indepth_choose{
-	background: #fff;
+	background-color: #fff;
 	color: #EEBBBD;
 	width: 120px;
 	height: 30px;
 	margin: 10px auto auto;
 	line-height: 30px;
 	font-size: 10px;
+	cursor: pointer;
 }
-
+div.indepth_choose:hover{
+	background-color: #EEBBBD;
+	color: #FFF;
+}
+div#indepth_container_juan{
+	display: table;
+	margin: 10px auto auto;;
+}
+div#indepth_credits{
+	display: table;
+	margin: 16px auto auto;
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 14px;
+	color: #FFF;
+}
+div#indepth_credits span{
+	font-weight: 400;
+}
+div#indeph_black_overlay{
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-opacity: 0.8;
+    opacity:0.8;
+    filter: alpha(opacity=80);
+}
+div#indepth_container_share{
+	width: 582px;
+	height: 458px;
+	background-color: #FFF;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+div.indepth_overlay{
+	display: none;
+}
 
 
 
