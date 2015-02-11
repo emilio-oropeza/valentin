@@ -195,7 +195,7 @@ div#indepth_container_share{
 	width: 582px;
 	height: 458px;
 	background-color: #FFF;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
@@ -257,6 +257,7 @@ div#indepth_share_cont{
 	height: 308px;
 	font-family: "Roboto",sans-serif;
 	font-weight: 300;
+	font-size: 13px;
 }
 div#indepth_share_close{
 	width: 16px;
@@ -267,7 +268,6 @@ div#indepth_share_close{
 }
 div#indepth_share_text{
 	margin-top: 94px;
-	font-size: 13px;
 }
 div#indepth_share_text span{
 	font-weight: 600;
@@ -275,11 +275,38 @@ div#indepth_share_text span{
 	line-height: 36px;
 }
 div#indepth_share_btn{
-	
+	height: 32px;
+	margin-top: 25px;
+	color: #777777;
+	font-size: 15px;
+}
+div.indepth_share_btns{
+	width: 50px;
+	height: 30px;
+	display: inline-block;
+}
+div#indepth_face_btn{
+	background: url("../images/facebook_button@3x.png") no-repeat center;
+	background-size: auto 100%;
+}
+div#indepth_tweet_btn{
+	background: url("../images/twitter_button@3x.png") no-repeat center;
+	background-size: auto 100%;
 }
 div#indepth_share_tuto{
-	
+	width: 240px;
+	height: 85px;
+	margin-top: 20px;
 }
+div#indepth_share_tuto div{
+	width: 138px;
+	display: inline-block;
+	margin-top: 10px;
+}
+div#indepth_share_tuto img{
+	float: right;
+}
+
 
 
 

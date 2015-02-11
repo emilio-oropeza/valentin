@@ -52,6 +52,12 @@ $(document).ready(function(){
 			});
 		});
 	});
+	$("#indepth_face_btn").on("click", function(){
+		share_facebook();
+	});
+	$("#indepth_tweet_btn").on("click", function(){
+		share_twitter();
+	});
 
 });
 
@@ -66,4 +72,23 @@ function show(id){
 	}else if(index == 16){
 		$("#indepth_arrow_rigth").hide();
 	}
+}
+
+function share_twitter(){
+	var text = encodeURIComponent("image = "+urlIndepth + "images/"+index+".jpg");
+	var url = location.href;
+	var parts = url.split("?");
+	parts = parts[0].split("#");
+	url = parts[0];
+	
+	window.open("https://twitter.com/share?via=juanfutbol&text="+text+"&url="+url,"","width=500, height=300");
+}
+function share_facebook(){
+	var url = location.href;
+	var parts = url.split("?");
+	parts = parts[0].split("#");
+	url = parts[0];
+	
+	url = encodeURIComponent(url+"?cart="+index+"&image="+urlIndepth + 'images/'+index+'.jpg');
+	window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
 }
