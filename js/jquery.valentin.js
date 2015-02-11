@@ -75,11 +75,11 @@ function show(id){
 }
 
 function share_twitter(){
-	var text = encodeURIComponent("image = "+urlIndepth + "images/"+index+".jpg");
 	var url = location.href;
 	var parts = url.split("?");
 	parts = parts[0].split("#");
 	url = parts[0];
+	var text = encodeURIComponent("image = "+url + "images/"+index+".jpg");
 	
 	window.open("https://twitter.com/share?via=juanfutbol&text="+text+"&url="+url,"","width=500, height=300");
 }
