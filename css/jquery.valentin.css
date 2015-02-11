@@ -179,6 +179,7 @@ div#indeph_black_overlay{
 	-moz-opacity: 0.8;
     opacity:0.8;
     filter: alpha(opacity=80);
+    display: none;
 }
 div#indepth_container_share{
 	width: 582px;
@@ -190,10 +191,9 @@ div#indepth_container_share{
 	top: 0;
 	bottom: 0;
 	margin: auto;
-}
-div.indepth_overlay{
 	display: none;
 }
+
 
 
 
