@@ -1,14 +1,13 @@
 
-var cards = ["-1","-0px","-295px","-591px","-887px","-1183px",
-			"-1479px","-1775px","-2070px","-2366px",
+var cards = ["-1","-0px","-296px","-592px","-888px","-1183px",
+			"-1479px","-1775px","-2071px","-2367px",
 			"-2662px","-2958px","-3254px","-3550px",
-			"-3845px","-4141px","-4437px"];
+			"-3846px","-4142px","-4438px"];
 
 $(document).ready(function(){
-	$("#indepth_top").height($(window).height());
+	resize();
 	$(window).resize(function(){
-		console.log($(window).height());
-		$("#indepth_top").height($(window).height());
+		resize();
 	});
 
 	var index = 1;
@@ -75,12 +74,13 @@ function show(id){
 }
 
 function share_twitter(){
+	var text = encodeURIComponent("#JuanValentin");
 	var url = location.href;
 	var parts = url.split("?");
 	parts = parts[0].split("#");
 	url = parts[0];
-	var text = encodeURIComponent("image = "+url + "images/"+index+".jpg");
 	
+	url = encodeURIComponent(url+"?cart="+index+"&image="+urlIndepth + 'images/'+index+'.jpg');
 	window.open("https://twitter.com/share?via=juanfutbol&text="+text+"&url="+url,"","width=500, height=300");
 }
 function share_facebook(){
@@ -91,4 +91,8 @@ function share_facebook(){
 	
 	url = encodeURIComponent(url+"?cart="+index+"&image="+urlIndepth + 'images/'+index+'.jpg');
 	window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"","width=500, height=300");
+}
+function resize(){
+	$("#indepth_top").height($(window).height());
+		
 }

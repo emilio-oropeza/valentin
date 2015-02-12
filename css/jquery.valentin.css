@@ -170,6 +170,8 @@ div#indepth_container_juan{
 	margin: 10px auto auto;;
 }
 div#indepth_credits{
+	width: 90%;
+	text-align: center;
 	display: table;
 	margin: 16px auto auto;
 	font-family: 'Roboto';
@@ -262,9 +264,12 @@ div#indepth_share_cont{
 div#indepth_share_close{
 	width: 16px;
 	height: 16px;
-	background: url("../images/IMG_Cerrar.png") no-repeat center;
-	float: right;
+	background: url("../images/IMG_Cerrar.png") no-repeat scroll center center transparent;
 	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 5;
 }
 div#indepth_share_text{
 	margin-top: 94px;
@@ -275,7 +280,7 @@ div#indepth_share_text span{
 	line-height: 36px;
 }
 div#indepth_share_btn{
-	height: 32px;
+	height: 52px;
 	margin-top: 25px;
 	color: #777777;
 	font-size: 15px;
@@ -284,6 +289,7 @@ div.indepth_share_btns{
 	width: 50px;
 	height: 30px;
 	display: inline-block;
+	cursor: pointer;
 }
 div#indepth_face_btn{
 	background: url("../images/facebook_button@3x.png") no-repeat center;
@@ -295,19 +301,124 @@ div#indepth_tweet_btn{
 }
 div#indepth_share_tuto{
 	width: 240px;
-	height: 85px;
+	height: 83px;
 	margin-top: 20px;
+	font-size: 12px;
 }
 div#indepth_share_tuto div{
 	width: 138px;
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 div#indepth_share_tuto img{
 	float: right;
 }
+ @media (max-width: 970px){
+ 	div#indepth_container_cards {
+ 		width: 722px;
+ 	}
+ 	div#indepth_top_tittle {
+ 		width: 90%;
+		height: auto;
+ 	}
+ 	div#indepth_top div#indepth_top_content {
+ 		width: 100%;
+ 	}
+ }
+ @media (max-width: 723px){
+ 	div#indepth_container_cards {
+ 		width: 480px;
+ 	}
+ 	div#indepth_top div#indepth_top_content {
+ 		height: 500px;
+ 	}
+ 	div#indepth_container_share{
+ 		width: 291px;
+ 	}
+ 	div#indepth_share_close {
+ 		height: 25px;
+		right: 10px;
+		top: 10px;
+		background-size: 100% auto;
+		width: 25px;
+ 	}
+ 	div#indepth_share{
+ 		position: absolute;
+		left: 0px;
+		background-color: rgb(0, 0, 0);
+		height: 99px;
+		bottom: 0px;
+		color: rgb(255, 255, 255);
+		opacity: 0.7;
+ 	}
+ 	div#indepth_share_cont{
+ 		width: 100%;
+		height: 100%;
+		margin: auto;
+ 	}
+ 	div#indepth_share_text{
+ 		width: 190px;
+		float: left;
+		display: inline-block;
+		margin-top: 0px;
+		margin-left: 10px;
+ 	}
+ 	div#indepth_share_btn{
+ 		margin: 0px;
+		color: rgb(255, 255, 255);
+		width: 90px;
+		float: left;
+		display: inline-block;
+		height: auto;
+ 	}
+ 	div#indepth_share_btn span{
+ 		display: none;
+ 	}
+ 	div.indepth_share_btns{
+ 		display: table;
+		margin: auto;
+ 	}
+ 	div#indepth_share_tuto{
+ 		display: none;
+ 	}
+ 	div.indepth_share_btns {
+ 		width: 100%;
+		background-size: 100%;
+		height: 50px;
+ 	}
+ 	div#indepth_face_btn {
+ 		background-size: 100%;
+ 	}
+ 	div#indepth_tweet_btn {
+ 		background-size: 100%;
+ 	}
+ }
+@media (max-width: 481px){
+	div#indepth_top_tittle{
+		font-size: 12px;
+	}
+	div#indepth_top_tittle span{
+		font-size: 20px;
+		letter-spacing: -1px;
+	}
 
+ 	div#indepth_container_cards {
+ 		width: 238px;
+ 	}
+ 	div#indepth_top_btn {
+ 		width: 90%;
+ 	}
+ 	div#indepth_top div#indepth_top_content {
+ 		height: 440px;
+ 	}
+ 	div#indepth_top_btn {
+ 		margin-top: 15px;
+ 	}
+ 	div#indepth_top_logo {
+ 		margin-top: 20px;
+ 	}
 
+ }
 
 
 
