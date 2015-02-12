@@ -153,16 +153,17 @@ div.indepth_cards_hover:hover{
 }
 div.indepth_choose{
 	background-color: #fff;
-	color: #EEBBBD;
+	color: #E04F55;
 	width: 120px;
 	height: 30px;
 	margin: 10px auto auto;
 	line-height: 30px;
 	font-size: 10px;
 	cursor: pointer;
+	font-weight: 700;
 }
 div.indepth_choose:hover{
-	background-color: #EEBBBD;
+	background-color: #E04F55;
 	color: #FFF;
 }
 div#indepth_container_juan{
