@@ -392,10 +392,16 @@ div#indepth_share_tuto img{
  	div#indepth_tweet_btn {
  		background-size: 100%;
  	}
+ 	@media (min-height: 580px){
+ 		div#indepth_container_share{
+ 			height: 557px;
+ 		}
+ 	}
  }
+
 @media (max-width: 481px){
 	div#indepth_top_tittle{
-		font-size: 12px;
+		font-size: 15px;
 	}
 	div#indepth_top_tittle span{
 		font-size: 20px;
@@ -417,8 +423,8 @@ div#indepth_share_tuto img{
  	div#indepth_top_logo {
  		margin-top: 20px;
  	}
-
  }
+
 
 
 
