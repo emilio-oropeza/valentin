@@ -124,7 +124,7 @@ div#indepth_top_logo{
 	height: 58px;
 }
 div#indepth_container_cards{
-	width: 964px;
+	width: 966px;
 	display: table;
 	margin: 85px auto auto;
 	padding-top: 50px;
@@ -246,6 +246,8 @@ div#indepth_slider_imgs{
 }
 div#indepth_slider_imgs img{
 	height: 458px;
+	position: absolute;
+	top:0px;
 }
 div#indepth_share{
 	display: inline-block;
@@ -316,7 +318,7 @@ div#indepth_share_tuto img{
 }
  @media (max-width: 970px){
  	div#indepth_container_cards {
- 		width: 722px;
+ 		width: 724px;
  	}
  	div#indepth_top_tittle {
  		width: 90%;
@@ -328,7 +330,7 @@ div#indepth_share_tuto img{
  }
  @media (max-width: 723px){
  	div#indepth_container_cards {
- 		width: 480px;
+ 		width: 482px;
  	}
  	div#indepth_top div#indepth_top_content {
  		height: 500px;
