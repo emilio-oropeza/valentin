@@ -1,3 +1,9 @@
+var disqus_shortname = 'juanfutbol';
+var disqus_identifier;
+var disqus_url="9bbdf544-f74a-41e2-a307-ade8d30c1f8e";
+var disqus_number_c=2;
+var disqus_per_page=3;
+
 (function($){
 	$.fn.quiz = function(){
 		return this.each(function() {
@@ -151,4 +157,31 @@
 
 $(document).ready(function(){
 	$("#indepth_content").quiz();
+	loadDisqus($("#indepth_coments"),disqus_url, "http://juanfutbol.com/indepth/"+disqus_url);
 });
+
+function loadDisqus(source, identifier, url) {
+	if (window.DISQUS) {
+		jQuery('#disqus_thread').insertAfter(source);
+		/** if Disqus exists, call it's reset method with new parameters **/
+
+		DISQUS.reset({
+			reload: true,
+			config: function () { 
+			this.page.identifier = identifier.toString();    //important to convert it to string
+			this.page.url = url;
+			}
+		});
+	} else {
+		//insert a wrapper in HTML after the relevant "show comments" link
+		source.append('<div id="disqus_thread"></div>');
+		//jQuery('<div id="disqus_thread"></div>').insertAfter(source);
+		disqus_identifier = identifier; //set the identifier argument
+		disqus_url = url; //set the permalink argument
+		disqus_per_page=3;
+		//append the Disqus embed script to HTML
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		jQuery('head').append(dsq);
+	}
+};

@@ -316,6 +316,12 @@ div#indepth_share_tuto div{
 div#indepth_share_tuto img{
 	float: right;
 }
+div#indepth_coments{
+	width: 80%;
+	display: table;
+	margin: 40px auto auto;
+}
+
  @media (max-width: 970px){
  	div#indepth_container_cards {
  		width: 724px;
